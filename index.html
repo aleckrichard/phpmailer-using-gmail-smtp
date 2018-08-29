@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="full-height" lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PHPMailer using Gmail SMTP</title>
+    <meta name="description" content="Agencia digital Softing Chile: Realizamos Páginas Web, Diseño Web, Desarrollo web, posicionamiento web SEO, Cloud Computing e Internet of Things"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body id="top">
+<section id="contacto" style="background-image:url('img/panorama-3094696_1920.jpg');">
+  <div class="rgba-black-strong py-5">
+    <div class="container">
+      <div class="wow fadeIn">
+        <h2 class="h1 text-white pt-5 pb-3 text-center">PHPMailer con Gmail SMTP</h2>
+        <p class="text-white px-5 mb-5 pb-3 lead text-center">
+          Ejemplo de Enviar un email con PHPMailer utilizando el servidor SMTP de Gmail.
+        </p>
+      </div>
+      <div class="card mb-5 wow fadeInUp" data-wow-delay=".4s">
+        <div class="card-body p-5">
+          <div class="row">
+            <div class="col-md-12">
+              <form action="enviar.php" method="POST">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="md-form">
+                      <input class="form-control" id="name" type="text" name="nombre" required="required"/>
+                      <label for="name">Su Nombre</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="md-form">
+                      <input class="form-control" id="email" type="email" name="emailfrom" required="required"/>
+                      <label for="email">Su email</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <input class="form-control" id="subject" type="text" name="asunto" required="required"/>
+                      <label for="subject">Asunto</label>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <textarea class="md-textarea" id="message" name="mensaje" required="required"></textarea>
+                      <label for="message">Su mensaje</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="center-on-small-only mb-4">
+                  <button class="btn btn-indigo ml-0" type="submit"><i class="fa fa-paper-plane-o mr-2"></i> Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script>new WOW().init();</script>
+</body>
+</html>
